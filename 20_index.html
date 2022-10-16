@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>This is a js Object</h1>
+    <script>
+        let object = {
+            Name: 'Shri Hari Singh',
+            Woking: 'Former',
+            living: 'India',
+            phone: 89898989,
+            display: function() {
+                console.log('Inside the function............');
+            }
+
+        };
+
+        console.log(object.display);
+        console.log(object);
+        console.log(object.Name, object.Woking);
+        console.log(object["Name"]);
+        object.display();
+        // FOR IN LOOP
+        for (let bil in object) {
+            //     bil.object.Name;
+            console.log(bil + ':' + object[bil]);
+        }
+        object.display();
+        object["display"]();
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GEnnter and Setter</title>
+</head>
+<body>
+    <h3>Getter and  Setter</h3>
+    <script>
+        let student1={
+            name: "Shri HAri Singh",
+            state: "Up",
+            city: "GKP",
+ get name()
+ {
+    return this.name;
+ },
+ 
+            set name(name)
+            {
+                this.name=name;
+            },
+get state()
+{
+return this.state;
+},
+
+            set state(state)
+            {
+                this.state=state;
+            },
+get city()
+{
+    return this.city;
+},
+
+            set city(city){
+    this.city=city;
+},
+
+            display : function()
+            {
+              return ` ${this.name} : ${this.state} : ${this.city} `;
+            },
+        };
+        console.log(student1.display());
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        console.log('This is title');
+    </script>
+
+</head>
+
+<body>
+    <h1>DOM Delector</h1>
+    <p id="banner">Hello Mr. Ravi you are doing great job......... You will buy a car from yout tax rs</p>
+    <h3 class="master">Jai shri Ram</h3>
+    <h3 class="master">Jai shri Ram</h3>
+    <h3 class="master">Jai shri Ram</h3>
+    <script>
+        let cla = document.getElementsByClassName("master");
+        console.log(cla);
+        console.log('This is body');
+        //To target complete html we can use
+        let de = document.documentElement;
+        let bo = document.body;
+        let he = document.head;
+        let ti = document.title;
+
+        // console.log(de);
+        // console.log(ti);
+        // console.log(bo);
+        // console.log(he);
+        /*  let pp = document.getElementById("banner");
+        console.log(pp);
+        pp.innerHTML = "Shri Ram ji";
+        pp.style.color = "red";
+        pp.style.background = 'yellow';
+    */
+        // Selecting element by class name
+        let p1 = document.getElementsByTagName("h3");
+        console.log(p1);
+        for (let test2 of p1) {
+            test2.style.color = "blue";
+            test2.style.background = "Yellow";
+        }
+        // selecting elememt with the qury selector  = This will retuen signle element
+        // selecting elememt with the qury selector All =This will retuen All element
+        let qs = document.querySelectorAll(".master");
+        console.log(qs);
+    </script>
+</body>
+
+</html>

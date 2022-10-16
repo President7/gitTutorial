@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="main"></div>
+    <h1 id="title">Hello Mr. Presiident You are doing amazing work</h1>
+    <p id="hint">You will get successed in july 2022</p>
+    <button onclick="addNode()">Add Node </button>
+
+    <script>
+        function addNode() {
+            console.log('adding node.......');
+            // create node
+            let divElement = document.createElement("div");
+            console.log('divElement' + divElement);
+            console.log(divElement);
+            // creating test
+            let textElement = document.createTextNode("Amazing job");
+            let textElement1 = document.createTextNode("You will become fastest successor entrpreneure");
+            console.log(textElement);
+            // Addong text node to create divElemet
+            divElement.appendChild(textElement);
+            divElement.appendChild(textElement1);
+            console.log(divElement);
+            let maindivRef = document.getElementById("main");
+
+            maindivRef.appendChild(divElement);
+        }
+    </script>
+
+</body>
+
+</html>

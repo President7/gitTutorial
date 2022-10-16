@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>For In Loop</h1>
+    <script>
+        console.log('India');
+        let student = {
+            name: 'Shree Ram',
+            address: 'India',
+            phone: 8989890,
+        };
+        console.log(student);
+        for (let st in student) {
+            // console.log(st);
+            console.log(`${st} and######dsfr43q5t34tag56ty5et ${student[st]}`)
+        }
+
+        let array = ['Shree Ram', 'Lord Shiva', 'Shree Hari'];
+        /*   for (let k in array) {
+
+               console.log(array[k]);
+               // console.log(`${k} ===> ${array[k]}`);
+           }
+           */
+        for (let forOfLoop of array) {
+            console.log(forOfLoop);
+        }
+    </script>
+</body>
+
+</html>

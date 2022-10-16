@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" >
+    <link rel="stylesheet" href="style.css" />
+
+
+</script>
+
+</head>
+<body>
+<div class="container" id="cv-form">
+
+    <h1 class="text-center my-2" >Resome Generator<h1>
+        <p class="text-center">Great job Mr. Ravi</p>
+<div class="row">
+<div class="col-md-6">
+<h3>Personal Info</h3>
+
+<div class="form-group">
+    <label for="nameField">Your Name</label>
+    <input type="text" id="nameField" placeholder="Enter YourName" class="form-control"/>
+</div>
+<div class="form-group">
+    <label for="namePhone">Your Phone, Contact</label>
+    <input type="text" id="namePhone" placeholder="Enter Phone" class="form-control"/>
+</div>
+
+<div class="form-group">
+    <label for="nameAddress">Your Address</label>
+    <textarea type="text" id="nameAddress" placeholder="Enter Address" rows="3" class="form-control">
+</textarea>
+    </div>
+<div class="form-group">
+  <label for="">Select your Profile Pic</label>
+    <input id="imgField" type="file" class="form-control">
+    </div>
+</div>
+
+
+
+    <p class="text-secondary mt-2">Important Links</p>
+
+<div class="form-group">
+    <label for="nameGithub">GitHub</label>
+    <input type="text" id="nameGithub" placeholder="Enter Here" class="form-control"/>
+</div>
+<div class="form-group">
+    <label for="nameInsta">StackOverFlow</label>
+    <input type="text" id="nameStack" placeholder="Enter Here" class="form-control"/>
+</div>
+<div class="form-group">
+    <label for="nameLikedIn">LinkedIn</label>
+    <input type="text" id="nameLikedIn" placeholder="Enter Here" class="form-control"/>
+</div>
+
+
+
+</div>
+<div class="col-md-6">
+    <h3>Professional Info</h3>
+
+
+ <div class="form-group">
+    <label for="">Your Objective</label>
+    <textarea type="text" id="objectiveField" placeholder="Enter Here" class="form-control"> 
+ </textarea>
+    </div>
+
+    <div class="form-group" id="we">
+        <label for="">Work Experience</label>
+        <textarea type="text"  placeholder="Enter Here" class="form-control workField">
+        </textarea>
+    
+<div class="container text-center mt-2 " id="weButton">
+    <button onclick="addNewWorkExperience()" class="btn btn-primary btn-sm">Add</button>
+</div>
+</div>
+
+<div class="form-group" id="aqId">
+    <label for="">Academic Qualification</label>
+    <textarea type="text" placeholder="Enter Here" class="form-control aqField">
+</textarea>
+    
+<div class="container text-center mt-2" id="eqButton">
+<button onclick="addAcademic()" class="btn btn-primary btn-sm" >Add</button>
+</div>
+</div>
+
+
+
+</div>
+
+</div>
+
+<div class="container text-center">
+    <button onclick="generateCV()" class="btn btn-primary btn-lg">Generate CV</button>  
+</div>
+
+</div>
+
+
+<!-- cv template -->
+<div class="container" id="cv-template">
+<div class="row">
+    <!-- this is fisrtgrid -->
+    <div class="col-md-4  text-center py-5 background" >
+        <img src="https://st.depositphotos.com/2101611/3925/v/600/depositphotos_39258143-stock-illustration-businessman-avatar-profile-picture.jpg"
+            id="imgId"  alt="" class="img-fluid myimg" />
+            <div class="container">
+                <p id="nameT1">Shri HAri Singh</p>
+                <p id="contactT">+91 5252252252, 88555559</p>
+                <p id="addressT">Shri HAri Singh, 677 Up India</p>
+
+                <hr/>
+<p id="gitHybT"><a href="#1">https://getbootstrap.com/docs/5.0/getting-started/introduction/</a></p>
+<p id="stackT"><a href="#1">https://getbootstrap.com/docs/5.0/getting-started/introduction/</a></p>
+<p id="nameLikedInT"><a href="#1">https://getbootstrap.com/docs/5.0/getting-started/introduction/</a></p>
+
+            </div>
+            
+            </div>
+<!-- this is 3nd grid -->
+<div class="col-md-8 py-5">
+<h2 id="nameT2" class="text-center " style="font-weight: 890;">Jai shri Ram</h2>
+<div class="card">
+    <div class="card-header background">
+<h3>Objective</h3>
+
+    </div>
+    <div class="card-body">
+        <p id="objectiveT">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit laborum rem asperiores, quisquam odit, consequuntur laboriosam rerum voluptatibus ducimus corporis repudiandae, iusto commodi doloremque reiciendis ea accusamus ex adipisci consequatur quia quis totam! Optio sed assumenda iure dolorem ad cumque debitis ullam illo adipisci, fuga quas consequatur officiis autem fugit?</p>
+    </div>
+</div> 
+<!-- Work experience -->
+<div class="card mt-4">
+    <div class="card-header background">
+<h3>Work Experience</h3>
+
+    </div>
+    <div class="card-body">
+    <ul id="weT">
+        <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae, consequuntur?</li>
+        <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae, consequuntur?</li>
+        <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae, consequuntur?</li>
+     
+    </ul>
+    </div>
+</div> 
+<!-- Academic Qualiication -->
+<div class="card mt-4">
+    <div class="card-header background">
+<h3>Academic Qualification</h3>
+
+    </div>
+    <div class="card-body">
+    <ul id="aqT">
+        <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae, consequuntur?</li>
+        <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae, consequuntur?</li>
+        <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae, consequuntur?</li>
+     
+    </ul>
+    </div>
+</div> 
+<!-- Hobbies -->
+<!-- <div class="card mt-4">
+    <div class="card-header background">
+<h3>Hobbies</h3>
+
+    </div>
+    <div class="card-body">
+    <ul id="hoT">
+        <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae, consequuntur?</li>
+        <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae, consequuntur?</li>
+        <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae, consequuntur?</li>
+     
+    </ul>
+    </div>
+</div>  -->
+
+
+<div class="container mt-7 text-center">
+    <button onclick="printCV()" class="btn btn-primary">Print CV</button>
+</div>
+
+
+
+    </div>
+</div>
+
+</div>
+ <script type="text/javascript" src="script.js" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
